@@ -13,4 +13,4 @@ Unlike the FGSM and PGD methods, which may or may not yield images which fool th
 The One-Pixel attack, as suggested by its name, is an attack that is only allowed to modify one pixel of the image. Moreover, unliked the previous methods, it is a black box attack, meaning it can only query the neural network. It does not need to know the neural network's architecture or weights.
 
 ## Example of the implemented attacks
-![Generated adversarial images](attack_pic.png?raw=true)
+![Generated adversarial images](attack_pic.png)
