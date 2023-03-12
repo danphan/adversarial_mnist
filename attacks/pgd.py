@@ -3,7 +3,8 @@ Defines the class implementing the Projected Gradient Descent Attack.
 Paper: https://arxiv.org/abs/1706.06083
 """
 
-from attack import Attack
+from attacks.attack import Attack
+import tensorflow as tf
 
 class PGD(Attack):
     """
@@ -63,7 +64,6 @@ class PGD(Attack):
         dx = tf.random.uniform(tf.shape(x), -self.eps, self.eps)
         x_mod = x + dx
         for idx in range(self.num_iter):
-            print(f'Iteration: {idx}')
             #calculate gradient of loss with respect to images
             with tf.GradientTape() as tape:
                 tape.watch(x_mod)

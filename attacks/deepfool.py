@@ -3,7 +3,8 @@ Defines the class implementing the DeepFool attack:
 Paper: https://arxiv.org/abs/1511.04599
 """
 
-from attack import Attack
+from attacks.attack import Attack
+import tensorflow as tf
 
 class DeepFool(Attack):
     """

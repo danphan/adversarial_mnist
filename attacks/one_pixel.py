@@ -3,8 +3,9 @@ Defines the class implementing the one pixel attack:
 Paper: https://arxiv.org/abs/1710.08864
 """
 
-from attack import Attack
+from attacks.attack import Attack
 from scipy.optimize import differential_evolution
+import tensorflow as tf
 
 
 class OnePixel(Attack):

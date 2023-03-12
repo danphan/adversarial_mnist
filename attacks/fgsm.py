@@ -2,7 +2,8 @@
 Defines the class implementing the fast gradient sign method, from https://arxiv.org/abs/1412.6572
 """
 
-from attack import Attack
+from attacks.attack import Attack
+import tensorflow as tf
 
 class FGSM(Attack):
     """
